@@ -1,8 +1,38 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
 
 a {
   color: #00B7FF;
+}
+
+/* --------- nav ---------- */
+.nav{
+  text-align: center;
+  color: #999;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nav h1{
+  color: #00B7FF;
+  font-size: 4rem;
+}
+
+/* ---------- nav-settings ---------- */
+.nav-setting {
+  position: fixed;
+  right: 30px;
+  top: 35px;
+  z-index: 999;
+}
+
+.nav-setting .ui.dropdown.button {
+  padding: 10px 10px 0 10px;
+  background-color: #fff !important;
+}
+
+.nav-setting .icon.bars {
+  color: #000;
+  font-size: 18px;
 }
