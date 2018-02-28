@@ -3,5 +3,6 @@ module.exports = function (app){
     res.render("index",{title:"express"})
   })
   app.use('/signin',require('./signin'))
-
+  app.use('/signup',require('./signup'))
+  
 }

@@ -5,5 +5,11 @@ module.exports = {
         key: 'myblog',
         maxAge: 2592000000
     },
-    mongodb: 'mongodb://localhost:27017/myblog'
+    mysql:{
+        host:'127.0.0.1',
+        user:'root',
+        password:'109827cyy',
+        database:'test',
+        port:3306
+    }
 }
