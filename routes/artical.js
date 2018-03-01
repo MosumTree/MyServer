@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var URL = require('url');  
 router.get('./',function (req, res, next) {
-    res.send('user api');
+    // res.send('user api');
 })
 router.get('/getArticals', function(req, res, next) {
 

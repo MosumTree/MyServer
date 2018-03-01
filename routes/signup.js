@@ -59,8 +59,7 @@ router.post('/', checkNotLogin, function (req, res, next) {
       bio: bio,
       avatar: avatar
     }
-    console.log(user)
-    // // 用户信息写入数据库
+    // 用户信息写入数据库
     UserModel.create(user)
       .then(function (result) {
         // 此 user 是插入 mongodb 后的值，包含 _id
