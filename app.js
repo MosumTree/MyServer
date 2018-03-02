@@ -64,7 +64,6 @@ app.use(function (req, res, next) {
   res.locals.error = req.flash('error').toString()
   next()
 })
-
 // 处理表单及文件上传的中间件
 app.use(require('express-formidable')({
   uploadDir: path.join(__dirname, 'public/img'), // 上传文件目录

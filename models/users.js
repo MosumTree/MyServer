@@ -1,16 +1,17 @@
-const User = require('../lib/dao').User
-
+const User = require('../lib/userDAO')
 module.exports = {
-  // 注册一个用户
-  create: function create (user) {
-    return User.create(user).exec()
+  // 创建用户信息表
+  create: function create () {
+    return User.create()
   },
-
-  // 通过用户名获取用户信息
-  getUserByName: function getUserByName (name) {
-    return User
-      .findOne({ name: name })
-      .addCreatedAt()
-      .exec()
+  add:function add(user) {
+    return User.add(user)
   }
+  // 通过用户名获取用户信息
+  // getUserByName: function getUserByName (name) {
+  //   return User
+  //     .findOne({ name: name })
+  //     .addCreatedAt()
+  //     .exec()
+  // }
 }
