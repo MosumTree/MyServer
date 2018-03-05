@@ -104,3 +104,40 @@ module.exports = app;
 这是中间件可以记录下服务器接接收到的每一次http请求并生成一个记录文件。
 #### bodyParser
 #### cookieParser
+
+## 接口说明
+### 文章
+get
+#### ARTICALlist
+接受参数 : request.ARTICALListSort
+
+返回数据：
+```json
+{
+  Datas:[
+    {articalId:1,articalTitle:"title1",publishTime:"time1",author:"author1",articalSummary:"",visitedTimes:20},
+    {articalId:2,articalTitle:"title2",publishTime:"time2",author:"author2",articalSummary:"",visitedTimes:20}
+  ],
+  ErrCode:2,
+  ErrMsg:"sample string 2",
+  TotalCount:2
+}
+```
+#### ARTICALitem
+接受参数：request.ARTICALid
+
+返回数据：
+```json
+{
+  Datas:{
+    aricalId:1,
+    articalTitle:"title1",
+    aricalContent:"content",
+    articalSummary:"summary",
+    author:"author1",
+    publishTime:"time1"
+  },
+  ErrCode:2,
+  ErrMsg:"sample string 2",
+}
+```
