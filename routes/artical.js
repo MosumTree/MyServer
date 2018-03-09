@@ -14,6 +14,9 @@ router.get('/getArticalById', function(req, res, next) {
 router.get('/getArticalByName', function(req, res, next) {
     articalDAO.articalSearch(req, res, next);
 });
+router.get('/createArtical', function(req, res, next){
+    res.render('create');
+})
 //发布文章
 router.post('/publishArtical', function(req, res, next){
     articalDAO.articalAdd(req, res, next);
