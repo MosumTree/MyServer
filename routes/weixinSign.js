@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
  * 分享
  */
 router.post('/activityWxShare', function(req, res, next) {
-    let hrefURL = req.body.urlhref;
+    let hrefURL = "http://www.mosum.cn/";
     wxShare.prototype.accessToken(hrefURL, function(data) {
        return res.json(data);
     });
